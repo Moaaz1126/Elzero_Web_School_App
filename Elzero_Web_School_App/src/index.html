@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elzero Web School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/pomodoro.css">
+  </head>
+  <body>
+    <header>
+      <p id="updateM">We have new update, Plese install the new verson 1.2.0</p> 
+      <!-- <button id="install"> --> <a href="" id="install" download>Install</a> <!-- </button> --> 
+      <button id="x" onclick="CloseUpdate()">×</button>
+      <!-- <a href="MyServer1.rdp">Server 1</a> -->
+    </header>
+    <iframe src="https://elzero.org" frameborder="0"></iframe>
+    <nav>
+      <i class="fa-solid fa-chalkboard-user menuChanEle " onclick="menuChan('0')"><p class="one name" >Course</p></i>
+      <i class="fa-solid fa-list-check menuChanEle" onclick="menuChan('1')"><p class="two name" >chalnges</p></i>
+      <i class="fa-solid fa-file-code menuChanEle" onclick="menuChan('2')"><p class="three name">fjgnj</p></i>
+      <img src="img/icon.ico" alt="" onclick="menu()" ondblclick="home()">
+      <i class="fa-solid fa-newspaper menuChanEle" onclick="menuChan('3')"><p class="four name">fjkfjk</p></i>
+      <i class="fa-solid fa-file-circle-question menuChanEle" onclick="menuChan('4')"><p class="five name">fjncnj</p></i>
+      <i class="fa-solid fa-laptop-code menuChanEle" onclick="menuChan('5')"><p class="six name">fkofnlnl</p></i>
+      <div class="menu">
+        <h6>Elzero Web School</h6>
+        <label>language</label>
+        <select onchange="SetLan()">
+          <option value="EN">EN</option>
+          <option value="AR">AR</option>
+        </select>
+        <section>
+          <label for="">Theme</label>
+          <label for="Light" onclick="Theme('Light')" id="light"><input type="radio" name="th" id="Light" onclick="Theme('Light')">Light</label>
+          <label for="Dark" id="dark" onclick="Theme('Dark')"><input type="radio" name="th" id="Dark" onclick="Theme('Dark')">Dark</label>
+        </section>
+        <!-- <label for="App">App</label>
+        <select name="" id="two">
+          <option value="SelectApp">Select App</option>
+          <option value="vscode">Vs Code</option>
+        </select> -->
+        <!-- <button>launch </button> -->
+        <p onclick="pomodoro()">pomodoro</p>
+        <iframe class="pomodoro" src="https://moaaz1126.github.io/pomodoro/" frameborder="0"></iframe>
+          <aside>
+            <p onclick="youtube()">YouTube</p>
+            <p onclick="notion()">Notion</p> 
+            <p onclick="W3Shools()">W3Schools</p>
+            <p onclick="stackoverflow()">stackoverflow</p>
+            <p onclick="mozilla()">mozilla developer</p>
+            <p onclick="codepen()">CodePen</p>
+            <p onclick="gitHub()">GitHub</p>
+            <p onclick="dev()">Dev</p>
+            <p onclick="signIn()">Sign in</p>
+          </aside>
+        </div>
+
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/update.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script>
+      AppUpdate()
+      ThemeD()
+      SetDLan()
+    </script>
+  </body>
+</html>

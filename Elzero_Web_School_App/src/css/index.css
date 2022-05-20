@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200&display=swap');
+:root {
+  --text: white;
+  --background: black
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  /* margin: auto; */
+  max-width: 38rem;
+  /* padding: 2rem; */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+nav {
+  width: 100%;
+  height: 37px;
+  color: var(--text);
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background);
+}
+nav img {
+  width: 30px;
+  border-radius: 50%;
+}
+nav div {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  background-color: #005fcd;
+  color: rgb(255, 255, 255);
+  width: 250px;
+  /* height: 150px; */
+  padding-bottom: 4px;
+  border-radius: 2px;
+  /* border: 0.5px solid black; */
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  display: none;
+  transform: 0.5s;
+}
+nav div label, nav div p {
+  font-size: 13px;
+}
+nav div h6 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+nav div select {
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 130px;
+  margin-bottom: 5px;
+}
+nav div select option {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.112);
+}
+nav div #two {
+  width: 90px;
+  margin-bottom: 10px;
+}
+nav div button {
+  background-color: transparent;
+  border: none;
+  background-color: #0000006c;
+  width: 60px;
+  outline: none;
+  height: 25px;
+  border-radius: 2px;
+  color: white;
+  margin-left: 7px;
+}
+nav div button:hover {
+  background-color: rgba(0, 0, 0, 0.096);
+  transform: 1s;
+}
+nav .active {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--text);
+  color: var(--background);
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s;
+}
+nav .active::before {
+  left: 50%;
+  top: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: 0.5s;
+}
+
+nav i:hover {
+  display: flex;
+  justify-content: center;
+}
+nav i:hover .name {
+  display: block;
+} 
+nav i p {
+  color: black;
+  /* left: 50%; */
+  /* transform: translateX(-25%); */
+  display: none;
+  transform: 1s;
+  margin-bottom: 5px;
+  /* margin-left: ; */
+  position: absolute;
+  top: -27px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+nav div section {
+  margin-bottom: 5px;
+  justify-content: space-between;
+  display: flex;
+}
+nav div section input {
+  margin-right: 5px;
+  color: white;
+}
+nav div section #dark {
+  margin-right: 20px;
+  /* background-color: #0000006c; */
+}
+iframe {
+  width: 100%;
+  height: calc(100% - 27px);
+  display: block;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  background-color: #009688;
+  height: 40px;
+  align-items: center;
+  color: white;
+  display: none;
+}
+header p {
+  font-size: 17px;
+  margin-left: 30px;
+  font-weight: 300;
+}
+header #install {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  right: 100px;
+  background: transparent;
+  border-radius: 0px;
+  border: 1.5px solid black;
+  padding: 6px;
+  color: white;
+  width: 100px;
+}
+header #install:hover {
+  background-color: #0077ff;
+  transition: 0.6s;
+}
+header #x {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  color: white;
+}
+header #x:hover {
+  color: rgb(206, 0, 0);
+  transition: 0.5s;
+}
+.pomodoro {
+  position: absolute;
+  top: -403px;
+  width: 400px;
+  display: none;
+  height: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media only screen and (max-width: 600px) {
+  header p {
+    font-size: 13px;
+    margin-left: 7px;
+    font-weight: 300;
+  }
+  header #x {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    color: white;
+  }
+  header #install {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    right: 45px;
+    background: transparent;
+    border-radius: 0px;
+    border: 1.5px solid black;
+    padding: 6px;
+    color: white;
+    width: 70px;
+  }
+}
+nav .menu aside {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav .menu aside p {
+  margin-right: 30px;
+}
